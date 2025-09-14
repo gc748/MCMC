@@ -1,0 +1,21 @@
+Package: MCMC
+Type: Package
+Title: Random Sampling and Diagnostics of Sampling Using MCMCs
+Version: 0.1.0
+Authors@R: c(
+    person(
+      "Gabriel", "Cage-Sepeda",
+      email = "gc748@nau.edu",
+      role = c("aut", "cre")
+    )
+  )
+Description: Creates multiple functions for sampling and one for
+    for diagnosing the samples with Gelman diagnostics. 
+    "inverse.cdf" generates any number of samples from a given CDF.
+    "accept.reject" uses the accept-reject method to accept inputs
+    only if their respective output is under the target pdf.
+    "MCMC.metropolis" accepts perturbation steps only if they
+    represent a higher density from the previous point. "Gelman"
+    accepts many MCMC and diagnoses a number of related statistics.
+Encoding: UTF-8
+LazyData: true
